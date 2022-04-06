@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/navbar-fixed/">
+  <link rel="icon" href="favicon.ico">
+</head>
+<body>
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <a class="navbar-brand" href="#">El Mundo Gamer</a>
+          </div>
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="./nuevo">Inicio</a></li>
+            <li><a href="#">Revistas</a></li>
+            <li><a href="#">Figuras de accion</a></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="login"><span class="glyphicon glyphicon-user"></span> Registrate</a></li>
+            <li><a href="nuevo"><span class="glyphicon glyphicon-log-in"></span> Iniciar sesión</a></li>
+            <li><a href="./administrador"><span></span> Administrador</a></li>
+          </ul>
+        </div>
+      </nav>
+    <header>
+        <main role="main">     
+            <hr>
+            <div class="container"> 
+      
+              <div class="register-form">
+                <form action="/register" method="POST">
+                    <label>Nombre:</label>
+                    <input type="text" name="nom" id="nom" placeholder="Nombre" required>
+                    <label>Usuario:</label>
+                    <input type="text" name="usr" id="usr" placeholder="Usuario" required>
+                    <label>Contraseña:</label>
+                    <input type="password" name="pass" id="pass" placeholder="Contraseña" required>
+                    <label>Contraseña:</label>
+                    <input type="text" name="status" id="status" value="1" hidden>
+                    <input type="submit"  name="btn_reg" id="btn_reg" class="btn-reg" value="Aceptar">
+                </form>
+                <a href="login" class="btn-login">Registro</a>
+            </div>
+        
+            <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js"></script> -->
+            <!-- <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+            <% if(typeof alert != "undefined"){ %>
+            <script>
+                Swal.fire({
+                    title: '<% alertTitle %>',
+                    text: "<% alertMessage %>",
+                    icon: '<% alertIcon %>',
+                    showConfirmButton: '<% showConfirmButton %>',
+                    timer: '<% timer %>'
+                }).then(()=>{
+                    window.loation = '/ <% ruta %>'
+                })
+            </script>
+            <% } %> -->
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+<script src="/bootstrap/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    
+</body>
+</html>
